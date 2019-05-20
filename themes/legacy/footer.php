@@ -11,6 +11,26 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
+					<div class="footer-container">
+						<div class="row">
+							<div class="col col-4">
+								<a href='<?php echo esc_url( home_url( '/' ) ); ?>'>
+									<div class='footer-logo'></div>
+								</a>
+							</div>
+							<div class="col col-4">
+								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+							</div>
+							<div class="col col-4">
+								<?php wp_nav_menu( array( 'theme_location' => 'social', 'menu_id' => 'social-menu' ) ); ?>
+							</div>
+						</div>
+						<div class="copyright-container">
+							<p>Copyright &copy; 2019 Legacy limited</p>
+              <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
+						</div>
+					</div>
+
 
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->

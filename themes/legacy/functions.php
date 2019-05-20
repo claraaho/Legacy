@@ -24,6 +24,8 @@ function legacy_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
+		'footer' => esc_html( 'Footer Menu' ),
+		'social' => esc_html( 'Social Menu' ),
 	) );
 
 	// Switch search form, comment form, and comments to output valid HTML5.

@@ -26,7 +26,7 @@ a {
 
 /* Menus */
 
-.main-navigation {
+.main-navigation, .menu-footer-menu-container, .menu-primary-menu-container, .menu-social-menu-container {
 	clear: both;
 	display: block;
 	float: left;
@@ -105,7 +105,7 @@ a {
 	.menu-toggle {
 		display: none;
 	}
-	.main-navigation ul {
+	.main-navigation ul, .menu-footer-menu-container ul, .menu-primary-menu-container ul, .menu-social-menu-container ul {
 		display: block;
 	}
 }
