@@ -13,15 +13,15 @@
 				<div class="site-info">
 					<div class="footer-container">
 						<div class="row">
-							<div class="col col-4">
+							<div class="col col-4 footer-item">
 								<a href='<?php echo esc_url( home_url( '/' ) ); ?>'>
 									<div class='footer-logo'></div>
 								</a>
 							</div>
-							<div class="col col-4">
+							<div class="col col-4 footer-item">
 								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 							</div>
-							<div class="col col-4">
+							<div class="col col-4 footer-item">
 								<?php wp_nav_menu( array( 'theme_location' => 'social', 'menu_id' => 'social-menu' ) ); ?>
 							</div>
 						</div>

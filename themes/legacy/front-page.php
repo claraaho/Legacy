@@ -19,7 +19,7 @@ get_header(); ?>
               <h2><?php echo the_field('services_title'); ?></h2>
               <h3><?php echo the_field('services_heading'); ?></h3>
             </div>
-          	<div class="col"-12></div>
+          	<div class="col-12"></div>
         		<div class="col-12">
         			<?php echo the_field('services_excerpt'); ?>
         		</div>
