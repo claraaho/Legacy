@@ -225,6 +225,90 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Vision Black';
+  src: url("./../../assets/fonts/vision-black_italic-webfont.eot");
+  src: url("./../../assets/fonts/vision-black_italic-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-black_italic-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-black_italic-webfont.woff") format("woff"), url("./../../assets/fonts/vision-black_italic-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-black_italic-webfont.svg#visionblack_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Vision Black';
+  src: url("./../../assets/fonts/vision-black-webfont.eot");
+  src: url("./../../assets/fonts/vision-black-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-black-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-black-webfont.woff") format("woff"), url("./../../assets/fonts/vision-black-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-black-webfont.svg#visionblack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Vision';
+  src: url("./../../assets/fonts/vision-bold-webfont.eot");
+  src: url("./../../assets/fonts/vision-bold-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-bold-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-bold-webfont.woff") format("woff"), url("./../../assets/fonts/vision-bold-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-bold-webfont.svg#visionbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Vision';
+  src: url("./../../assets/fonts/vision-bolditalic-webfont.eot");
+  src: url("./../../assets/fonts/vision-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-bolditalic-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-bolditalic-webfont.woff") format("woff"), url("./../../assets/fonts/vision-bolditalic-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-bolditalic-webfont.svg#visionbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Vision Heavy';
+  src: url("./../../assets/fonts/vision-heavy-webfont.eot");
+  src: url("./../../assets/fonts/vision-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-heavy-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-heavy-webfont.woff") format("woff"), url("./../../assets/fonts/vision-heavy-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-heavy-webfont.svg#visionheavy") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Vision Heavy';
+  src: url("./../../assets/fonts/vision-heavyitalic-webfont.eot");
+  src: url("./../../assets/fonts/vision-heavyitalic-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-heavyitalic-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-heavyitalic-webfont.woff") format("woff"), url("./../../assets/fonts/vision-heavyitalic-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-heavyitalic-webfont.svg#visionheavy_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Vision Light';
+  src: url("./../../assets/fonts/vision-light-webfont.eot");
+  src: url("./../../assets/fonts/vision-light-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-light-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-light-webfont.woff") format("woff"), url("./../../assets/fonts/vision-light-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-light-webfont.svg#visionlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Vision Light';
+  src: url("./../../assets/fonts/vision-lightitalic-webfont.eot");
+  src: url("./../../assets/fonts/vision-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-lightitalic-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-lightitalic-webfont.woff") format("woff"), url("./../../assets/fonts/vision-lightitalic-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-lightitalic-webfont.svg#visionlight_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Vision';
+  src: url("./../../assets/fonts/vision-regular_italic-webfont.eot");
+  src: url("./../../assets/fonts/vision-regular_italic-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-regular_italic-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-regular_italic-webfont.woff") format("woff"), url("./../../assets/fonts/vision-regular_italic-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-regular_italic-webfont.svg#visionitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Vision Thin';
+  src: url("./../../assets/fonts/vision-thin_italic-webfont.eot");
+  src: url("./../../assets/fonts/vision-thin_italic-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-thin_italic-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-thin_italic-webfont.woff") format("woff"), url("./../../assets/fonts/vision-thin_italic-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-thin_italic-webfont.svg#visionthin_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Vision Thin';
+  src: url("./../../assets/fonts/vision-thin-webfont.eot");
+  src: url("./../../assets/fonts/vision-thin-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-thin-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-thin-webfont.woff") format("woff"), url("./../../assets/fonts/vision-thin-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-thin-webfont.svg#visionthin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Vision';
+  src: url("./../../assets/fonts/vision-webfont.eot");
+  src: url("./../../assets/fonts/vision-webfont.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/vision-webfont.woff2") format("woff2"), url("./../../assets/fonts/vision-webfont.woff") format("woff"), url("./../../assets/fonts/vision-webfont.ttf") format("truetype"), url("./../../assets/fonts/vision-webfont.svg#visionregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -233,8 +317,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #FFFFFF;
+  font-family: "Vision Thin", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -872,3 +956,99 @@ footer .menu-primary-menu-container li {
     text-align: right; }
   .copyright-container p, .copyright-container .menu-footer-menu-container {
     width: 50%; }
+
+.about-block {
+  position: relative;
+  height: 950px; }
+  .about-block img {
+    z-index: -9999;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom; }
+
+.about-container {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .about-container .row {
+    height: 100%;
+    padding: 4rem 0; }
+  .about-container h2, .about-container h3, .about-container h4 {
+    margin: 0;
+    letter-spacing: 2px; }
+  .about-container h2, .about-container h4 {
+    text-transform: uppercase; }
+  .about-container h2, .about-container h3 {
+    margin-bottom: 1rem; }
+  .about-container h2 {
+    font-family: 'Vision', sans-serif;
+    font-size: 60px;
+    letter-spacing: 5px; }
+    @media only screen and (min-width: 1024px) {
+      .about-container h2 {
+        font-size: 70px; } }
+  .about-container h3 {
+    text-align: center;
+    max-width: 470px;
+    color: #D4A328;
+    font-family: 'Vision', sans-serif;
+    font-weight: bold;
+    font-size: 22px; }
+    @media only screen and (min-width: 1024px) {
+      .about-container h3 {
+        font-size: 27px;
+        max-width: 620px; } }
+  .about-container h4 {
+    margin-top: 4rem;
+    color: #808080;
+    font-size: 20px; }
+    @media only screen and (min-width: 1024px) {
+      .about-container h4 {
+        font-size: 26px; } }
+
+.container-heading {
+  background-image: url(../../assets/img/assets_waveform.png);
+  background-position: -23rem -0.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.container-arrow {
+  background-image: url(../../assets/img/assets_custom_icon.png);
+  width: 43px;
+  height: 43px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.container-content {
+  font-size: 20px;
+  max-width: 875px;
+  margin: 0 auto;
+  text-align: justify;
+  padding: 0 1.5rem; }
+  @media only screen and (min-width: 1024px) {
+    .container-content {
+      font-size: 25px; } }

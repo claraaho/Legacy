@@ -27,17 +27,20 @@ get_header(); ?>
     		</div>
     	</section>
 
-      <section class="container-fluid about-block">
-        <div class="row">
-          <div class="col-12">
+      <section class="about-block">
+        <img src="<?php echo the_field('about_background_image'); ?>">
+        <div class="container-fluid about-container">
+      <div class="row">
+          <div class="col-12 container-heading">
             <h4 class="test"><?php echo the_field('about_subtitle'); ?></h4>
             <h2><?php echo the_field('about_title'); ?></h2>
             <h3><?php echo the_field('about_heading'); ?></h3>
           </div>
-          <div class="col"-12></div>
-          <div class="col-12">
+          <div class="col-12 container-arrow"></div>
+          <div class="col-12 container-content">
             <?php echo the_field('about_excerpt'); ?>
           </div>
+        </div>
         </div>
       </section>
             
