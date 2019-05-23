@@ -1099,11 +1099,11 @@ footer .menu-primary-menu-container li {
   margin: 0; }
 
 .slider-container-heading h2 {
-  text-align: center; }
+  text-align: center;
+  max-width: 20rem; }
   @media only screen and (min-width: 1024px) {
     .slider-container-heading h2 {
-      text-align: left;
-      max-width: 20rem; } }
+      text-align: left; } }
 
 .slider-container .first-row {
   -webkit-box-orient: vertical;
