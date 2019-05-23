@@ -87,7 +87,11 @@ add_filter( 'stylesheet_uri', 'legacy_minified_css', 10, 2 );
 function legacy_scripts() {
 	wp_enqueue_style( 'legacy-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'legacy-flickity-style',  get_template_directory_uri() .'/build/css/flickity.min.css', array(), null, 'all' );
+
 	wp_enqueue_script( 'jquery');
+
+	wp_enqueue_script( 'legacy-flickity', get_template_directory_uri() . '/build/js/flickity.pkgd.min.js', array('jquery'), false, true);
 
 	wp_enqueue_script( 'legacy-js', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), false, true);
 
@@ -108,3 +112,62 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/**
+ *  Move WP Admin Bar to the bottom
+ */
+function pakdhw_move_admin_bar() {
+	echo '
+	<style type="text/css">
+	body.admin-bar #wphead {
+			padding-top: 0;
+	}
+	#wpadminbar {
+			top: auto !important;
+			bottom: 0;
+			position: fixed;
+			background: rgba(0,0,0,0.5);
+	}
+	#wpadminbar .quicklinks .menupop ul {
+			position: absolute;
+			bottom: 32px;
+			background-color: #23282d;
+	}
+	#wpadminbar .quicklinks .menupop ul + ul {
+			bottom: 70px;
+	}
+	#wpadminbar .quicklinks .menupop ul ul {
+			transform: translateY(62px);
+			-webkit-transform: translateY(62px);
+			-ms-transform: translateY(62px);
+	}
+	#wpadminbar .quicklinks .menupop ul.ab-sub-secondary {
+			bottom: 64px;
+			position: absolute;
+	}
+	@media screen and (max-width: 782px) {
+			#wpadminbar .quicklinks .menupop ul {
+					bottom: 46px;
+			}
+			#wpadminbar .quicklinks .menupop ul + ul,
+			#wpadminbar .quicklinks .menupop ul.ab-sub-secondary {
+					bottom: 86px;
+			}
+			#wpadminbar .quicklinks .menupop ul ul {
+					transform: translateY(92px);
+					-webkit-transform: translateY(92px);
+					-ms-transform: translateY(92px);
+			}
+	}
+	</style>';
+}
+// on frontend area
+// add_action( 'wp_head', 'pakdhw_move_admin_bar' );
+
+/**
+ *  Remove html margin
+ */
+function my_filter_head() {
+	remove_action('wp_head', '_admin_bar_bump_cb');
+}
+add_action('get_header', 'my_filter_head');

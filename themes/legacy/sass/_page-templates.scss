@@ -1,5 +1,13 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* General */
+.site-content {
+  margin-top: 79px;
+  @include media($desktop) {
+    margin-top: 80px;
+  }
+}
+
 
 /* Front page */

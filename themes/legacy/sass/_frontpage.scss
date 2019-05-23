@@ -1,26 +1,24 @@
-.about-block {
-  position: relative;
-  height: 950px;
-  img {
-    z-index: -9999;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-  }
-}
-
-.about-container {
+//Shared styles
+.shared-container {
   z-index: 99;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.8);
-  .row {
-    height: 100%;
-    padding: 4rem 0;
-  }
+}
+
+.first-row {
+  height: 100%;
+  padding: 4rem 0;
+}
+
+.container-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h2, h3, h4 {
     margin: 0;
     letter-spacing: 2px;
@@ -42,7 +40,6 @@
   h3 {
     text-align: center;
     max-width: 470px;
-    color: $color__accent-gold;
     font-family: 'Vision', sans-serif;
     font-weight: bold;
     font-size: 22px;
@@ -61,17 +58,159 @@
   }
 }
 
-.container-heading {
+.container-content {
+  font-size: 20px;
+  max-width: 875px;
+  margin: 0 auto;
+  text-align: justify;
+  padding: 0 1.5rem;
+  @include media($desktop) {
+    font-size: 25px;
+    padding: 0;
+  }
+}
+
+.container-icon {
+  width: 20%;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+.nested-row {
+  margin: 0;
+}
+
+.hero-block, .footer-block {
+  min-height: 675px;
+}
+
+.carousel .flickity-viewport {
+  position: initial;
+}
+
+/* position dots in carousel */
+.slides .flickity-page-dots {
+  bottom: 1.5rem;
+}
+
+/* white circles */
+.slides .flickity-page-dots .dot {
+    width: 15px;
+    height: 15px;
+    background: rgba(225,225,225,0.9);
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: #D4A328;
+}
+
+.sliders {
+  width: 100%;
+  height: 100%;
+}
+
+.slides .flickity-slider {
+  position: relative;
+}
+
+//Hero Block Styles
+.home-block {
+  position: relative;
+  img {
+    z-index: -9999;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    position: absolute;
+  }
+}
+
+.home-block .slides {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slider-container-heading {
+  @include media($desktop) {
+    align-items: flex-start;
+  }
+  h4 {
+    margin: 0;
+  }
+  h2 {
+    text-align: center;
+    @include media($desktop) {
+      text-align: left;
+      max-width: 20rem;
+    }
+  }
+}
+
+.slider-container .first-row {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  @include media($desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.slider-content {
+  order: 2;
+  @include media($desktop) {
+    order: 0;
+    width: 45%;
+  }
+}
+
+.slider-link {
+  width: 175px;
+  height: 36px;
+  background: #FFF;
+  border-radius: 30px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  a {
+    color: $color__accent-grey;
+    padding-top: 3px;
+    &:hover {
+      text-decoration: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  span {
+    background-image: url(../../assets/img/assets_button_icon.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+//About Block Styles
+.about-block {
+  min-height: 950px;
+}
+
+.about-container-heading {
   background-image: url(../../assets/img/assets_waveform.png);
   background-position: -23rem -0.5rem;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 222px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-height: 222px;
+  h3 {
+    color: $color__accent-gold;
+  }
 }
 
 .container-arrow {
@@ -83,15 +222,4 @@
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-}
-
-.container-content {
-  font-size: 20px;
-  max-width: 875px;
-  margin: 0 auto;
-  text-align: justify;
-  padding: 0 1.5rem;
-  @include media($desktop) {
-    font-size: 25px;
-  }
 }
