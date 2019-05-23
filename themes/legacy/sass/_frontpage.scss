@@ -174,19 +174,24 @@
   height: 36px;
   background: #FFF;
   border-radius: 30px;
-  font-size: 17px;
+  font-size: 14px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  a {
+  letter-spacing: 1px;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  p {
     color: $color__accent-grey;
     padding-top: 3px;
-    &:hover {
-      text-decoration: none;
-    }
-    &:focus {
-      outline: none;
-    }
+    margin: 0;
+    width: 80%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
   }
   span {
     background-image: url(../../assets/img/assets_button_icon.png);

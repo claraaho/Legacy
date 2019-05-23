@@ -29,7 +29,7 @@ get_header(); ?>
                           <?php the_sub_field('hero_excerpt'); ?>
                           <?php $link = get_sub_field('hero_link');
 	                        if( $link ): ?>
-	                          <p class="slider-link"><a class="button" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a><span></span></p>
+	                          <a class="slider-link" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><p><?php echo $link['title']; ?></p><span></span></a>
 	                        <?php endif; ?>
                         </div>
                       </div>  
@@ -79,9 +79,9 @@ get_header(); ?>
                         </div>
                         <div class="col-12 container-content">
                           <?php the_sub_field('footer_excerpt'); ?>
-                          <?php $link = get_sub_field('footer_link');
-	                        if( $link ): ?>
-	                          <p><a class="button" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a></p>
+                          <?php $link2 = get_sub_field('footer_link');
+	                        if( $link2 ): ?>
+	                          <a class="slider-link" href="<?php echo $link2['url']; ?>" target="<?php echo $link2['target']; ?>"><p><?php echo $link2['title']; ?></p><span></span></a>
 	                        <?php endif; ?>
                         </div>
                       </div>  
