@@ -1,8 +1,6 @@
 //Shared styles
 .shared-container {
   z-index: 99;
-  position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.8);
@@ -38,7 +36,6 @@
     }
   }
   h3 {
-    text-align: center;
     max-width: 470px;
     font-family: 'Vision', sans-serif;
     font-weight: bold;
@@ -117,14 +114,15 @@
 //Hero Block Styles
 .home-block {
   position: relative;
-  img {
-    z-index: -9999;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-    position: absolute;
-  }
+}
+
+.background-image {
+  z-index: -9999;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  position: absolute;
 }
 
 .home-block .slides {
@@ -203,18 +201,20 @@
 }
 
 //About Block Styles
-.about-block {
-  min-height: 950px;
+.about-block .background-image {
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .about-container-heading {
   background-image: url(../../assets/img/assets_waveform.png);
-  background-position: -23rem -0.5rem;
+  background-position: -24rem -0.5rem;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 222px;
+  height: 222px;
   h3 {
     color: $color__accent-gold;
+    text-align: center;
   }
 }
 

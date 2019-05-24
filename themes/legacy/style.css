@@ -1031,8 +1031,6 @@ footer .menu-primary-menu-container li {
 
 .shared-container {
   z-index: 99;
-  position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8); }
@@ -1071,7 +1069,6 @@ footer .menu-primary-menu-container li {
       .container-heading h2 {
         font-size: 70px; } }
   .container-heading h3 {
-    text-align: center;
     max-width: 470px;
     font-family: 'Vision', sans-serif;
     font-weight: bold;
@@ -1136,15 +1133,16 @@ footer .menu-primary-menu-container li {
 
 .home-block {
   position: relative; }
-  .home-block img {
-    z-index: -9999;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: bottom;
-       object-position: bottom;
-    position: absolute; }
+
+.background-image {
+  z-index: -9999;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  position: absolute; }
 
 .home-block .slides {
   margin: 0;
@@ -1236,17 +1234,19 @@ footer .menu-primary-menu-container li {
     background-size: contain;
     background-repeat: no-repeat; }
 
-.about-block {
-  min-height: 950px; }
+.about-block .background-image {
+  margin-right: -15px;
+  margin-left: -15px; }
 
 .about-container-heading {
   background-image: url(../../assets/img/assets_waveform.png);
-  background-position: -23rem -0.5rem;
+  background-position: -24rem -0.5rem;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 222px; }
+  height: 222px; }
   .about-container-heading h3 {
-    color: #D4A328; }
+    color: #D4A328;
+    text-align: center; }
 
 .container-arrow {
   background-image: url(../../assets/img/assets_custom_icon.png);
