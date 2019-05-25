@@ -35,7 +35,7 @@ get_header(); ?>
                       </div>  
                     </div>
                     <div class="col-12 container-icon">
-                      <?php the_sub_field('hero_icon'); ?>
+                      <img src="<?php the_sub_field('hero_icon'); ?>">
                     </div>
                   </div>
                 </div>
@@ -95,6 +95,22 @@ get_header(); ?>
             <?php endwhile; ?>
           </ul>
         <?php endif;?>
+      </section>
+
+      <section class="contact-block">
+        <div class="contact-info-container">
+          <div class="contact-description-wrapper">
+            <h3><?php echo the_field('contact_heading'); ?></h3>
+            <p><?php echo the_field('contact_description'); ?></p>
+          </div>
+          <div class="contact-info-wrapper">
+            <p><i class="fas fa-phone"></i><a href="tel:+1<?php echo the_field('contact_telephone'); ?>" class="contact-phone"><?php echo the_field('contact_telephone'); ?></a></p>
+            <p><i class="fas fa-envelope-square"></i><a href="mailto:<?php echo the_field('contact_email'); ?>"><?php echo the_field('contact_email'); ?></a>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <?php echo do_shortcode("[contact-form-7 id='130' title='Contact form 1']"); ?>
+        </div>
       </section>
 
 		</main><!-- #main -->
