@@ -35,7 +35,10 @@ get_header(); ?>
                       </div>  
                     </div>
                     <div class="col-12 container-icon">
-                      <img src="<?php the_sub_field('hero_icon'); ?>">
+                      <?php $icon_link = get_sub_field('hero_icon');
+	                    if( $link ): ?>
+                        <img src="<?php echo $icon_link; ?>">
+                      <?php endif; ?>
                     </div>
                   </div>
                 </div>
@@ -87,7 +90,10 @@ get_header(); ?>
                       </div>  
                     </div>
                     <div class="col-12 container-icon">
-                      <?php the_sub_field('footer_icon'); ?>
+                      <?php $icon_link2 = get_sub_field('footer_icon');
+	                    if( $link ): ?>
+                        <img src="<?php echo $icon_link2; ?>">
+                      <?php endif; ?>
                     </div>
                   </div>
                 </div>
