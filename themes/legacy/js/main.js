@@ -6,7 +6,7 @@
         contain: true,
         percentPosition: true,
         imagesLoaded: false,
-        autoPlay: 4000, 
+        // autoPlay: 4000, 
         prevNextButtons: false,
         wrapAround: true,
     });
